@@ -1,7 +1,9 @@
 
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+
+import classes from './OneDog.module.css';
 
 export default function OneDog(props) {
     const [dog, setDog] = useState([]);
@@ -22,9 +24,13 @@ export default function OneDog(props) {
     }, [breed])
     return (
         <div>
+            <Link className={classes.link} to='/'>
+                <h2>Homepage</h2>
+            </Link>
+            <h1>Breed: {breed}</h1>
             {dog.map((d) => (
                 <div key={d}>
-                    <img src={d} alt={breed} />
+                    <img className={classes.image} src={d} alt={breed} />
                 </div>
             ))}
         </div>

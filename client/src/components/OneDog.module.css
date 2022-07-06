@@ -1,0 +1,8 @@
+.image {
+  width: 30vw;
+  height: 30vw;
+}
+.link {
+  text-decoration: none;
+  color: rgb(255, 127, 127);
+}

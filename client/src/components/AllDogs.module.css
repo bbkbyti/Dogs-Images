@@ -3,3 +3,12 @@
   grid-template-columns: auto auto auto auto;
   padding: 3rem;
 }
+.text {
+  background-color: rgb(255, 127, 127);
+  color: white;
+  padding: 3rem;
+}
+.link {
+  text-decoration: none;
+  color: rgb(255, 127, 127);
+}

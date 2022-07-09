@@ -5,7 +5,7 @@ import axios from 'axios';
 
 import classes from './OneDog.module.css';
 
-export default function OneDog(props) {
+export default function OneDog() {
     const [dog, setDog] = useState([]);
 
     const { breed } = useParams();
@@ -22,17 +22,25 @@ export default function OneDog(props) {
         }
         fetchData();
     }, [breed])
+
+
+
     return (
         <div>
-            <Link className={classes.link} to='/'>
-                <h2>Homepage</h2>
-            </Link>
-            <h1>Breed: {breed}</h1>
-            {dog.map((d) => (
-                <div key={d}>
-                    <img className={classes.image} src={d} alt={breed} />
-                </div>
-            ))}
+            <div className={classes.header}>
+                <Link className={classes.link} to='/'>
+                    <span className={classes.home}>Dog Lot</span>
+                </Link>
+            </div>
+            <div className={classes.container}>
+                {dog.map((d) => (
+                    <div className={classes.images} key={d}>
+                        <img className={classes.image} src={d} alt={breed} />
+                    </div>
+                ))}
+                <p className={classes.breed}>{breed}</p>
+            </div>
+
         </div>
     )
 }

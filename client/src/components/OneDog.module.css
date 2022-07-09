@@ -1,8 +1,37 @@
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(255, 127, 127);
+  padding: 3rem;
+}
+.home {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(206, 206, 206);
+}
+.breed {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: rgb(255, 127, 127);
+  font-weight: bolder;
+}
+
+.container {
+  background-color: rgb(206, 206, 206);
+  min-height: 100vh;
+}
+.images {
+  display: inline-block;
+}
+
 .image {
-  width: 30vw;
-  height: 30vw;
+  width: 23vw;
+  height: 20vw;
+  margin: 1.5rem;
+  border-radius: 1rem;
 }
 .link {
   text-decoration: none;
-  color: rgb(255, 127, 127);
+  font-weight: bolder;
 }

@@ -1,12 +1,11 @@
-.breeds {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  padding: 3rem;
+.all {
+  text-align: center;
 }
+
 .text {
   background-color: rgb(255, 127, 127);
-  color: white;
-  padding: 3rem;
+  color: rgb(206, 206, 206);
+  padding: 2rem;
 }
 .link {
   text-decoration: none;

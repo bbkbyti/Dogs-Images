@@ -1,18 +1,14 @@
 
 import './App.css';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import axios from 'axios';
 
-import Form from './components/Form'
 import AllDogs from './components/AllDogs';
 import OneDog from './components/OneDog'
 
 function App() {
   const [breeds, setBreeds] = useState([])
-
-
-
 
   useEffect(() => {
     const fetchData = async () => {

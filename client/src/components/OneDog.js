@@ -40,7 +40,6 @@ export default function OneDog() {
                 ))}
                 <p className={classes.breed}>{breed}</p>
             </div>
-
         </div>
     )
 }
